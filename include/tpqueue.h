@@ -5,9 +5,11 @@
 
 template <typename T, int size>
 class TPQueue {
+
   private:
     int first, last;
     T arr[100];
+    
   public:
     TPQueue() : first(0), last(0) {}
     void push(T num) {
