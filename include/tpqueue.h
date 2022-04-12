@@ -5,12 +5,10 @@
 
 template <typename T, int size>
 class TPQueue {
-
-  private:
+   private:
     int first, last;
     T arr[100];
-    
-  public:
+   public:
     TPQueue() : first(0), last(0) {}
     void push(T num) {
       if (last - first >= size) {
