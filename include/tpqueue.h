@@ -5,10 +5,10 @@
 
 template <typename T, int size>
 class TPQueue {
-private:
-    int first, last;
+ private:
     T arr[100];
-public:
+    int first, last;
+ public:
     TPQueue() : first(0), last(0) {}
     void push(T num) {
       if (last - first >= size) {
@@ -18,8 +18,7 @@ public:
       while ((--con >= first) && (arr[con % size].prior < num.prior)) {
         arr[(con + 1) % size] = arr[con % size];
         }
-      arr[(con + 1) % size] = num;
-      }
+      arr[(con + 1) % size] = num;}
   }
   T pop() {
     return arr[(first++) % size];
