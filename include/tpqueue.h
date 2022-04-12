@@ -19,7 +19,7 @@ class TPQueue {
         arr[(con + 1) % size] = arr[con % size];
         }
       arr[(con + 1) % size] = num;}
-  }
+}
   T pop() {
     return arr[(first++) % size];
   }
